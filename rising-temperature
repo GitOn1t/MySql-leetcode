@@ -1,0 +1,6 @@
+ELECT w_next.id
+FROM weather w_next
+JOIN weather w_prev
+on w_next.recordDate=DATE_ADD(w_prev.recordDate,Interval 1 day)
+WHERE w_next.temperature>w_prev.temperature
+order by w_next.id;
