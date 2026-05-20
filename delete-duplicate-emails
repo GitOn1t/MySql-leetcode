@@ -1,3 +1,9 @@
+What this does (in short)
+
+Compares rows within the same table
+Finds rows with same email (duplicates)
+Deletes the row with the larger id
+----------------------------------------------------------------------------------------
 Delete p from person p
 join person p2
 on p.email=p2.email AND p.id>p2.id;
